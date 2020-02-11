@@ -8,6 +8,7 @@ import (
 	"github.com/golang/mock/gomock"
 )
 
+/* StringContaining returns a gomock.Matcher that returns true whenever a string contains the substring s. */
 func StringContaining(s string) gomock.Matcher {
 	return &stringContainingMatcher{substr: s}
 }
